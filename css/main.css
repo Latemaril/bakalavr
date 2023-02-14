@@ -1,0 +1,99 @@
+@import "reset.css";
+
+html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 5rem;
+}
+
+li {
+    position: relative;
+    width: 100%;
+    margin-right: 1rem;
+    margin-top: 10px;
+}
+
+.radios {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 60px rgb(127 137 161 / 30%);
+    list-style: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.radios.active {
+    /*background-color: rgba(23, 95, 169, 1);*/
+    /*color: #FFFFFF;*/
+}
+
+.radios {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+li .list {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(161.69deg, #FFFFFF -107.11%, rgba(254, 178, 178, 0.67453) -107.11%, rgba(168, 147, 254, 0.542339) -107.11%, #175FA9 -93.78%, #286BAF -75.2%, #F5F5F5 146.18%);;;
+    box-shadow: 0px 0px 50px rgb(127 137 161 / 50%);
+    margin-top: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.list {
+    display: none;
+}
+
+.list.active {
+    display: block;
+}
+
+.faq-list {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+
+    background-color: #3c3c3c;
+    border-radius: 100%;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.radios.active .circle {
+    background-color: #ef6603;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px rgb(245, 108, 0);
+}
+
+.radios:hover .circle {
+    background-color: #ef6603;
+    box-shadow: 0px 0px 20px rgb(245, 108, 0);
+}
